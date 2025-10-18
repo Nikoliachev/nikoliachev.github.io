@@ -4,5 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Markdown Browser</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
+<body class="bg-gray-50 text-gray-800 flex h-screen">
+  <aside id="sidebar" class="w-64 bg-white shadow overflow-auto p-4"></aside>
+  <main class="flex-1 p-6 overflow-auto">
+    <nav id="breadcrumbs" class="text-sm text-gray-500 mb-4"></nav>
+    <article id="content" class="prose max-w-none"></article>
+  </main>
+
+  <script type="module" src="main.js"></script>
+</body>
 </html>
