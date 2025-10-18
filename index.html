@@ -214,7 +214,16 @@
 
     <script>
         const DOCS_FOLDER = 'docs'; // Change this to your docs folder path
-        let fileStructure = {};
+        const fileStructure = {
+    'Folder Name': {
+        'file1.md': '# Your markdown content here',
+        'file2.md': '# More content'
+    },
+    'Another Folder': {
+        'doc.md': '# Another document'
+    }
+};
+        /*let fileStructure = {};
 
         // Scan the docs folder and build file structure
         async function scanDocsFolder() {
@@ -229,7 +238,7 @@
                 showError('Could not load file structure. Make sure structure.json exists.');
                 console.error(e);
             }
-        }
+        }*/
 
         // Initialize the file tree
         function initFileTree() {
