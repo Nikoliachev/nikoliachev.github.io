@@ -1,4 +1,4 @@
-const fileStructure = {
+{
     'Folder Name': {
         'file1.md': '# Your markdown content here',
         'file2.md': '# More content'
