@@ -1,5 +1,8 @@
 {
   "guide": [
     "File.md"
+  ],
+  "help": [
+    "Red.md"
   ]
 }
