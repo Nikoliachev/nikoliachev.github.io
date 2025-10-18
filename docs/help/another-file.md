@@ -1,0 +1,1 @@
+As he says, “[a]bduction is the process of forming explanatory hypotheses. It is the only logical operation which introduces any new idea” (CP 5.172); elsewhere he says that abduction encompasses “all the operations by which theories and conceptions are engendered” (CP 5.590)
