@@ -1,9 +1,5 @@
 {
-    'Folder Name': {
-        'file1.md': '# Your markdown content here',
-        'file2.md': '# More content'
-    },
-    'Another Folder': {
-        'doc.md': '# Another document'
-    }
-};
+  "guide": [
+    "File.md"
+  ]
+}
