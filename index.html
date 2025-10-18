@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Markdown Viewer</title>
+    <title>The Franchise</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
     <style>
         * {
@@ -53,10 +53,6 @@
         .folder-name::before {
             content: '📁 ';
             margin-right: 5px;
-        }
-
-        .folder-name.expanded::before {
-            content: '📂 ';
         }
 
         .file-list {
@@ -200,7 +196,6 @@
     <div class="sidebar">
         <h2>Documents</h2>
         <div id="file-tree">
-            <div class="loading">Loading files...</div>
         </div>
     </div>
     <div class="content">
@@ -261,13 +256,11 @@
                 });
 
                 folderName.onclick = () => {
-                    folderName.classList.toggle('expanded');
                     fileList.classList.toggle('show');
                 };
 
                 // Auto-expand first folder
                 if (tree.children.length === 0) {
-                    folderName.classList.add('expanded');
                     fileList.classList.add('show');
                 }
 
@@ -280,7 +273,7 @@
         // Load and display markdown content
         async function loadMarkdown(folder, filename, element) {
             const contentDiv = document.getElementById('markdown-content');
-            contentDiv.innerHTML = '<div class="loading">Loading...</div>';
+            //contentDiv.innerHTML = '<div class="loading">Loading...</div>';
             
             try {
                 const filepath = `${DOCS_FOLDER}/${folder}/${filename}`;
