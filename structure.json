@@ -3,6 +3,7 @@
     "File.md"
   ],
   "help": [
-    "Red.md"
+    "Red.md",
+    "another-file.md"
   ]
 }
